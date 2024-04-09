@@ -6,7 +6,7 @@ from wtforms import SelectMultipleField, StringField,PasswordField, SubmitField,
 from wtforms.validators import DataRequired, Length, EqualTo, Email,ValidationError, Regexp
 from model import User
 from flask_login import login_user, logout_user, current_user, login_required
- 
+ #from
 class RegistrationForm(FlaskForm):
     username = StringField(label='Username',validators=[DataRequired(), Length(min=3, max=20)])
     email = StringField(label= 'Email',validators=[DataRequired(), Email()])
